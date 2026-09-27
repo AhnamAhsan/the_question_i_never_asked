@@ -1,0 +1,296 @@
+body{
+
+    margin:0;
+
+    background:#0f172a;
+
+    color:white;
+
+    font-family:Inter,sans-serif;
+
+}
+
+
+#footer_text{
+
+    display:none;
+
+    text-align:center;
+
+    margin:40px 0;
+
+}
+
+#footer_text p{
+    font-size: 11px;
+    
+    position: relative;
+
+    margin-bottom: 0px;
+
+    white-space: pre-line;
+}
+
+#progressContainer{
+
+    width:320px;
+
+    height:10px;
+
+    background:#334155;
+
+    margin:40px auto;
+
+    border-radius:20px;
+
+    position:fixed;
+
+    right:35px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+}
+
+@media (max-width: 600px) {
+
+    #diagram {
+        width: 92%;
+        padding: 40px 0;
+    }
+
+    .card {
+        padding: 22px 18px;
+        margin-top: 30px;
+    }
+
+    .card p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    button {
+        margin: 25px 5px 0;
+        padding: 11px 18px;
+        font-size: 14px;
+    }
+
+    #progress-container {
+        position: fixed;
+        top: 10px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+
+    .card {
+        animation: fadeIn 0.6s ease;
+    }
+
+    @keyframes fadeIn {
+
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    }
+
+    button:hover {
+        transform: none;
+    }
+
+
+}
+
+#progressBar{
+
+    width:0%;
+
+    height:100%;
+
+    background:#38bdf8;
+
+    border-radius:20px;
+
+    transition:.35s;
+
+}
+
+#diagram{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:50px 0;
+
+}
+.card{
+
+    background:#1e293b;
+
+    border:2px solid #334155;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    margin-top:60px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+    max-width: 760px;
+
+    line-height:2;
+
+    opacity:0;
+
+    transform:translateY(20px);
+
+    animation:fadeUp .5s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+    opacity:0;
+    transform:translateY(20px);
+
+    }
+
+    to{
+
+    opacity:1;
+    transform:translateY(0);
+
+    }
+
+}
+
+.card h2{
+
+    margin-top:0;
+
+}
+
+.card p{
+
+    line-height:1.7;
+
+    white-space: pre-line;
+
+}
+
+button{
+
+    margin: 40px 15px 0px;
+
+    padding:12px 28px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#38bdf8;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    gap: 40px;
+
+    transition:transform .25s ease,
+               background .25s ease,
+               box-shadow .25s ease;
+
+}
+
+button:hover{
+
+    transform:translateY(-2px) scale(1.03);
+
+    box-shadow:0 6px 18px rgba(56,189,248,.35);
+
+}
+
+button.selected{
+
+    opacity:1;
+
+}
+
+button.not-selected{
+
+    opacity:.45;
+
+}
+
+.choice-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:40px;
+
+    margin-top:30px;
+
+}
+
+.choice-card{
+
+    padding:20px;
+
+    min-width:160px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.start-node{
+
+    width:22px;
+
+    height:22px;
+
+    background:white;
+
+    border-radius:50%;
+
+    margin:auto;
+
+}
+
+.line{
+
+    width:4px;
+
+    height: 60px;
+
+    background:#38bdf8;
+
+    margin: 15px auto;
+
+}

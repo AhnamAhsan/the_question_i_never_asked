@@ -1,0 +1,18 @@
+Version 0.1
+
+Initial page
+Background
+Card
+Begin button
+
+✅ Complete
+
+Version 0.2
+
+Story object
+Dynamic rendering
+Node engine
+Append system
+Placeholder branches
+
+✅ Complete
